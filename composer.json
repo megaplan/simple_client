@@ -1,5 +1,5 @@
 {
-    "name": "megaplan/simple_api_client",
+    "name": "megaplan/simple_client",
     "description": "Simple API client for Megaplan",
     "type": "library",
     "license": "MIT",
