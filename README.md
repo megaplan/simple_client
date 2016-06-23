@@ -12,7 +12,7 @@
 		->auth('pupkin@megaplan.ru', 'idclip')
         ->get('/BumsTaskApiV01/Task/list.api');
         
-    /**
+    /*
         object(stdClass)#20 (2) {
           ["status"]=>
           object(stdClass)#18 (2) {
