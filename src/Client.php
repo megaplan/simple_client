@@ -66,6 +66,13 @@ class Client
         $this->timeout = $timeout;
     }
 
+    /**
+     * @param string $login
+     * @param string $password
+     *
+     * @return $this
+     * @throws \Exception
+     */
     public function auth($login, $password)
     {
         $response = $this->post('/BumsCommonApiV01/User/authorize.api', [
@@ -79,6 +86,20 @@ class Client
 
         $this->accessId = $response->data->AccessId;
         $this->secretKey = $response->data->SecretKey;
+
+        return $this;
+    }
+
+    /**
+     * @param string $uuid
+     * @param string $token
+     *
+     * @return $this
+     */
+    public function authApplication($uuid, $token)
+    {
+        $this->accessId = $uuid;
+        $this->secretKey = $token;
 
         return $this;
     }
