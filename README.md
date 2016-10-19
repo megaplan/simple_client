@@ -2,7 +2,7 @@
 
 ## Установка 
 
-``composer require megaplan/simple_api_client``
+``composer require megaplan/simple_client:dev-master``
 
 ## Использование 
 
